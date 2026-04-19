@@ -32,6 +32,14 @@ It scans Deployments, StatefulSets, DaemonSets, Jobs, CronJobs, and Pods, and de
 
 ## Install
 
+### Install with `go install`
+
+```bash
+go install github.com/tlmanz/kubectl-refx@latest
+```
+
+The binary is placed in `$(go env GOBIN)` (or `$(go env GOPATH)/bin`). Ensure that directory is in your `$PATH` so `kubectl` can discover the plugin.
+
 ### Build from source
 
 ```bash
